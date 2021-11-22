@@ -20,7 +20,7 @@ from corenlp import StanfordCoreNLP
 class CoreNLP(object):
     '''Connect CoreNLP server'''
     _NLP = StanfordCoreNLP(os.environ.get('CORENLP_URL') or
-                           'http://localhost:9000')
+                           'http://localhost:9001')
     _LOCAL_DEMO_PROP = {
         'annotators':
         'tokenize, ssplit, pos, lemma, ner, depparse, openie, coref',

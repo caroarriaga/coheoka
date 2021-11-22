@@ -14,7 +14,8 @@ of RankSVM using stochastic gradient descent methods.
 import itertools
 import numpy as np
 
-from sklearn import svm, linear_model, cross_validation
+from sklearn import svm, linear_model 
+from sklearn.model_selection import train_test_split
 from scipy.stats import kendalltau as tau
 
 
